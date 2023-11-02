@@ -1,0 +1,1 @@
+initDatatable('table')
