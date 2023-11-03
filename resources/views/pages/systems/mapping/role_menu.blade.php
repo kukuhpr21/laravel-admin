@@ -49,12 +49,15 @@
           </div>
           <div class="row-md-2 mb-3">
             <button type="submit" class="btn btn-primary">Update</button>
-            <form id="form"  class="browser-default-validation" method="POST" action="{{ route('reset-mapping-role-menu') }}">
-                @csrf
-                <input type="text" id="reset_role_selected" name="reset_role_selected" value="{{ isset($role) ? $role : '' }}" hidden>
-                <button type="button" class="btn btn-danger" onclick="this.form.submit()">Reset</button>
-            </form>
+
           </div>
+        </div>
+      </form>
+      <form id="form"  class="" method="POST" action="{{ route('reset-mapping-role-menu') }}">
+        @csrf
+        <div class="col-md-4 mb-3 px-4">
+            <input type="text" id="reset_role_selected" name="reset_role_selected" value="{{ isset($role) ? $role : '' }}" hidden>
+            <button type="submit" class="btn btn-danger">Reset</button>
         </div>
       </form>
       <div class="card-body">

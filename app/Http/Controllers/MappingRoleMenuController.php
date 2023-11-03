@@ -84,15 +84,10 @@ class MappingRoleMenuController extends Controller
     public function reset(Request $request)
     {
         $roleId   = $request->reset_role_selected;
-        $redirect = redirect()->route('reset-mapping-role-menu');
-        $result   = $this->roleMenuService->reset($roleId);
-        $this->createSessionFlash($request, 'reset mapping role menu', $result);
-
-        if ($result) {
-            $this->menuService->createCacheMenuRole($roleId);
-            return $redirect;
-        } else {
-            return $redirect->withInput($request->input());
-        }
+        $redirect = redirect()->route('role-menu');
+        $this->roleMenuService->reset($roleId);
+        $this->createSessionFlash($request, 'reset mapping role menu', true);
+        $this->menuService->createCacheMenuRole($roleId);
+        return $redirect;
     }
 }
