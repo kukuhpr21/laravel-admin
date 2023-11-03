@@ -7,7 +7,7 @@
                 document.write(new Date().getFullYear());
             </script>
             , made with ❤️ by
-            <a href="#" target="_blank" class="footer-link fw-bolder">Iqbal</a>
+            <a href="https://www.instagram.com/kukuh182/" target="_blank" class="footer-link fw-bolder">Kukuh Prakoso</a>
         </div>
         </div>
     </div>
