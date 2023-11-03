@@ -81,4 +81,7 @@ Route::prefix('mapping-role-menu')->group(function () {
 
     Route::post('show', [MappingRoleMenuController::class, 'show'])
         ->name('view-mapping-role-menu')->middleware("session.exist");
+
+    Route::post('reset', [MappingRoleMenuController::class, 'reset'])
+        ->name('reset-mapping-role-menu')->middleware("session.exist");
 });

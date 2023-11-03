@@ -35,4 +35,9 @@ class RoleMenuService
         $this->roleMenuRepository->deletebyRole($roleId);
         return $this->roleMenuRepository->saveBatch($role_menu);
     }
+
+    public function reset($roleId): bool
+    {
+        return $this->roleMenuRepository->deletebyRole($roleId);
+    }
 }

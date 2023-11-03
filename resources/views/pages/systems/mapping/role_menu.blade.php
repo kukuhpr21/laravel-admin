@@ -47,8 +47,13 @@
             </select>
             <div class="invalid-feedback">@error('menus') {{ $message }} @enderror</div>
           </div>
-          <div class="col-md-2 mb-3">
+          <div class="row-md-2 mb-3">
             <button type="submit" class="btn btn-primary">Update</button>
+            <form id="form"  class="browser-default-validation" method="POST" action="{{ route('reset-mapping-role-menu') }}">
+                @csrf
+                <input type="text" id="reset_role_selected" name="reset_role_selected" value="{{ isset($role) ? $role : '' }}" hidden>
+                <button type="button" class="btn btn-danger" onclick="this.form.submit()">Reset</button>
+            </form>
           </div>
         </div>
       </form>
