@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\RoleValidation;
 use App\Services\RoleService;
-use Illuminate\Http\Request;
 
 class RoleController extends Controller
 {

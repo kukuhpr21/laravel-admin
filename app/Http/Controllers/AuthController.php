@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Dto\ResponseDto;
 use App\Http\Requests\SignInValidation;
 use App\Services\AuthService;
-use Illuminate\Http\Request;
 
 class AuthController extends Controller
 {

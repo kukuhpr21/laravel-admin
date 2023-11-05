@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\MenuValidation;
 use App\Services\MenuService;
-use Illuminate\Http\Request;
 
 class MenuController extends Controller
 {
