@@ -15,8 +15,8 @@ class RoleModel extends Model
     public $timestamps    = false;
     protected $guarded    = [];
 
-    public function role()
+    public function user()
     {
-        return $this->belongsTo(RoleModel::class);
+        return $this->hasMany(UserModel::class);
     }
 }
