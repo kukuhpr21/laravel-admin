@@ -1,6 +1,9 @@
 @extends('base')
 @section('title', "List Menu")
 @section('content')
+<h4 class="fw-bold py-3 mb-4">
+    @yield('title')
+</h4>
 <div class="card">
   <div class="card-header">
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">

@@ -1,6 +1,9 @@
 @extends('base')
 @section('title', "List Role")
 @section('content')
+<h4 class="fw-bold py-3 mb-4">
+    @yield('title')
+</h4>
 @include('partials/toasts')
 <div class="card">
   <div class="card-header">
