@@ -2,7 +2,7 @@
 @section('title', "Edit Role")
 @section('content')
 <h4 class="fw-bold py-3 mb-4">
-    Edit Role
+    @yield('title')
 </h4>
 <div class="col-md-4 mb-4 mb-md-0">
     <div class="card">
